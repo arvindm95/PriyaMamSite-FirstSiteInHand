@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+<!--    <link rel="stylesheet" href="css/contact-form.css">
+    <!-- Font Icons -->
+<link href="css/fonts.css" rel="stylesheet">
+     
+	<link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<style>
+    
+
+  
+    
+label{        
+font-size: 1.5em;
+  margin-top: 1em;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1em;
+  font-weight: 200;        
+}
+.btn-group-lg>.btn, .btn-lg {
+ padding: 20px 10px;
+  margin-bottom: 3em;
+}
+
+.btn-success {
+   color: #fff;
+  background-color: rgb(39, 145, 116);
+  border-color: rgb(39, 145, 116);
+} 
+
+.jeffect{
+text-align:justify;    
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right:auto;
+  margin-left:auto;
+  position:relative;
+  left:-100%;
+   font-size:20px;
+}    
+    
+.jeffect1{
+-moz-animation-name: example; /* Chrome, Safari, Opera */
+ -moz-animation-duration:1.5s;    
+-webkit-animation-name: example; /* Chrome, Safari, Opera */
+ -webkit-animation-duration:1.5s; /* Chrome, Safari, Opera */
+    animation-name:example;
+    animation-duration:1.5s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+      
+    
+    -moz-animation-timing-function:ease-in;
+    -moz-animation-fill-mode:forwards;
+ } 
+h1{
+text-align: center;
+      margin-right: 2.5em;
+  margin-bottom: 1em;
+}    
+    
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {  
+        left:-110%;}
+   
+    70%  {
+         
+       left:7%;}
+     80%  {
+         
+       left:-7%;}
+   
+    90%  {
+         
+       left:0%;}
+     
+    
+    100%  {
+         
+       left:-2%;}
+ 
+}
+    
+    @keyframes example {
+    0%   {  
+        left:-110%;}
+   
+    70%  {
+         
+       left:7%;}
+     80%  {
+         
+       left:-7%;}
+   
+    90%  {
+         
+       left:0%;}
+     
+    
+    100%  {
+         
+       left:-2%;}
+ 
+}
+    
+
+
+      
+</style>        
+        
+        
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+        
+<style>
+            
+.input-lg{
+background: rgb(39, 145, 116) !important;    
+color:white;
+border: 1px solid rgb(39, 145, 116) !important;
+border-radius: 5px;
+}    
+textarea{
+background: rgb(39, 145, 116) !important;    
+color:white;
+border: 1px solid rgb(39, 145, 116) !important;
+border-radius: 5px;
+
+}
+    
+.mobile-nav .row{    
+height:4em;
+padding:1em;
+border-bottom: 1px solid;    
+color:white !important;
+    -webkit-transition: background-color 500ms linear, color 1s linear;
+-moz-transition: background-color 500ms linear, color 1s linear;
+-o-transition: background-color 500ms linear, color 1s linear;
+-ms-transition: background-color 500ms linear, color 1s linear;
+transition: background-color 500ms linear, color 1s linear;   
+}
+.mobile-nav .row a{
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+ 
+    
+}
+    
+.mobile-nav .row:hover{
+background:#E7D93C;
+color:white;    
+}
+.btn-success:hover{
+color:white !important;    
+border:1px solid #E7D93C !important;   
+background:#E7D93C !important;    
+}
+textarea{
+font-size:20px !important;    
+color:white;
+}
+    
+.services .container .row:nth-of-type(1){
+
+/*    border-bottom: 1px solid black;
+*/
+    margin-top:3em;
+    margin-bottom:5em;
+    
+}    
+ ::-webkit-input-placeholder { color:#fff; }
+::-moz-placeholder { color:#fff; } /* firefox 19+ */
+:-ms-input-placeholder { color:#fff; } /* ie */
+input:-moz-placeholder { color:#fff; }   
+ 
+    
+        </style>        
+        
+<!--	<script src="js/jquery-migrate-1.2.1.js"></script>
+   <script src='js/camera.js'></script>
+	<script src="js/owl.carousel.js"></script>-->
+<!--	<script src="js/jquery.stellar.js"></script>
+   <!-- <script src="js/main.js"></script>-->    
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+           
+            
+            
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+            
+      	// grab the initial top offset of the navigation 
+	var sticky_navigation_offset_top = $('.header_bg').offset().top;
+	
+	// our function that decides weather the navigation bar should have "fixed" css position or not.
+	var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+		
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+		if (scroll_top > sticky_navigation_offset_top) { 
+			$('.header_bg').css({ 'position':'fixed','top':0,'margin-top':'0px' ,'background':'rgba(39, 145, 116,1)'});
+		} 
+        else 
+        {
+            
+		$('.header_bg').css({ 'position': 'relative','margin-top':'-100px','background':'rgba(39, 145, 116,0)'});
+    
+		}   
+	};
+	
+	// run our function on load
+	sticky_navigation();
+	
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+		 sticky_navigation();
+	});
+    
+    $(window).scroll(function(){        
+       
+        if( ($(window).scrollTop())>400)
+        {
+          $("#jeffects").addClass("jeffect1");    
+        }
+        });        
+            
+		
+        
+    });
+    
+    $(window).load(function(){
+  
+    //alert("loaded");
+    });    
+        
+        
+        
+        
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	
+	
+	
+	
+	
+</head>
+<body class="index">    
+<section id="content">                                                                                       
+
+<iframe src="slider.html">
+  <p>Your browser does not support iframes.</p>
+</iframe>		
+    
+<div class="header_bg">
+<div class="wrap">
+
+	<div class="menu">	
+				<ul class="top-nav">
+                
+				   <li  class="active"><a href="#home">Home</a></li>
+				<li><a href="#home">AboutUs</a></li>
+				<li><a href="#w">Workshops</a></li>
+                 <li><a href="#news">Events/News</a></li>
+               <li><a href="#pro">Professional</a></li>
+                     <li><a href="#a">Articles</a></li>
+                  <li><a class="hsubs" href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+				
+                </ul>
+	</div>
+</div>
+
+</div>
+    
+<div class="full-width-container mobile-nav">
+<div  class="row text-center">
+<a href="#home" class="col-xs-12">Home</a>
+</div>
+<div class="row text-center">    
+<a href="#home" class="col-xs-12">About Us</a>
+</div>    
+<div class="row text-center">
+<a href="#w" class="col-xs-12">Workshops</a>
+</div>
+<div class="row text-center">
+<a href="#e" class="col-xs-12">Events/News</a>
+</div>
+<div class="row text-center">
+<a href="#pro" class="col-xs-12">Professional</a>
+</div>
+<div class="row text-center">
+<a href="#a" class="col-xs-12">Articles</a>
+</div>    
+<div class="row text-center">
+<a href="#services" class="col-xs-12">Services</a>
+</div> 
+<div class="row text-center">
+<a href="#contact" class="col-xs-12">Contact</a>
+</div>    
+</div>
+    
+    
+    
+    
+	<div id="home"  class="full-width-container block-2">
+		<div id="jeffects" class="container jeffect">
+			<div class="row">
+				<div class="grid_12">
+					<header><br><br><br>
+						<h1 style="margin-bottom:2em;">
+	<span>Welcome to Fitecc</span></h1>
+					</header>
+					The answer to all your fitness needs, at your reach. Get inspired to keep your body and mind healthy through numerous workout regimes. Sweating it out builds your body, burns fat, keeps you energized and psyched for a great day. Team it up with oxygen boosting aerobics to enhance your brainpower and focus. Stay stress-free and feel stunningly confident. Keep your blood healthy to reduce risks of long term diseases. Keep colds, flus and infections at bay. Feel buoyant and perform well through the clock. It’s time to burn those malicious calories. It’s time to give your body the healthy splendid look you’ve always wanted.<br>The answer to all your fitness needs, at your reach. Get inspired to keep your body and mind healthy through numerous workout regimes. Sweating it out builds your body, burns fat, keeps you energized and psyched for a great day. Team it up with oxygen boosting aerobics to enhance your brainpower and focus. Stay stress-free and feel stunningly confident. Keep your blood healthy to reduce risks of long term diseases. Keep colds, flus and infections at bay. Feel buoyant and perform well through the clock. It’s time to burn those malicious calories. It’s time to give your body the healthy splendid look you’ve always wanted.<br>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="services" class="full-width-container services"><!-- block-3 parallax-block" data-stellar-background-ratio="0.5">-->
+		<div class="container">
+            <div class="row">
+            <div class="col-lg-12"><h1>Services</h1></div>
+            </div>
+            <div class="row">
+            <div class="col-lg-6 jbox">
+                
+  
+                
+        		<div class="accordion" id="accordionArea1">
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea1" href="#oneArea1">
+                               Surgery Less Treatment
+                                <span class="font-icon-arrow-simple-down"></span>
+                            </div>
+                        </div>
+                        <div id="oneArea1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                            <img class="img-responsive" src="images/department/surgery-less-treatment-sparrc1.jpg"><br><br>    
+                               CAN SURGERY BE AVOIDED?………..
+
+At SPARRC we make it happen, the patients watch it happen and some wonder how it happened. To determine the choice of treatment requires a diagnosis to understand the human body with its astounding individuality, which is the unique talent of Dr.Kannan Pugazhendi. He stresses on an extensive history elicitation from the patient which has been the hallmark of medicine, now buried in favor of costly investigations run by technological advancement.
+
+Our Sports medicine Institute is driven by skill and human care, where exercise prescription supersedes the prescription of medicine, ensuring speedy recovery and good health in the process. Inspite of Key hole surgeries which are made alluring, the fear of surgery still remains. The Key hole nature only reduces the external incision but not the invasion. Even a Key hole invasion is an extensive procedure with its own outcomes, compared to an exercise prescribed to maintain health.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea1" href="#twoArea1">
+                           Cardiac Rehabilitation
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="twoArea1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                               <img class="img-responsive"src="images/department/cardiac/cardiac-rehab-sparrc-chennai.jpg">
+          Cardiac rehabilitation (rehab) is a medically supervised program that helps to improve the health and well-being of people who have Cardiac problems.Cardiac rehab in Dr.Kannan Pugazhendi’s “SPARRC Institute” helps to
+<ol type="1">
+    <li>Prevent future hospital stays, Coronary Artery Disease and premature death.</li>
+<li>Recover from a heart attack or heart surgery</li>
+<li>Identify the problem through a proper evaluation.</li>
+<li>Classify the patient on the basis of risk stratification</li>
+<li>Do exercise within the safe zone for establishing health and fitness.</li>
+<li>Improve the quality of life</li>
+</ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea1" href="#threeArea1">
+                          Kalari Training
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="threeArea1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <img class="img-responsive" src="images/department/kalari/timthumb%20(1).jpg"><br><br>  
+       Kalari is the only martial art that involves extensive exercises.
+Below are some of the interesting facts about Kalai:
+Kaalkal:
+In the kalari context, it refers to kicks as well as leg-raising exercises to increase flexibility.
+Kaikuththippayattu:
+is a compound of kai (hand), kuththi (hit) & payattu (exercise). It consists of punches, leg moves, stretches, twists, and jumps performed in a particular sequence.  It is preceded by warm-ups or mukakattu its complexity increases from one level to another.
+Chumattadi:
+Chumattadi teaches how to attack & defend against multiple opponents from all sides.  This exercise should be practiced with intense speed & power.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea1" href="#fourArea1">
+                         Physiotherapy
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="fourArea1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <img class="img-responsive"src="images/department/physiotherapy/Physiotherapy-Sparrc-institute-Dr-kannan-Pugazhendi.jpg"><br><br>  
+       Physiotherapy incorporates a number of different treatment techniques to provide a holistic approach to both injury prevention and cure.
+
+You will receive physiotherapy from a state registered Physiotherapist with rich experience in the treatment of musculoskeletal conditions from chronic low back pain to sports injuries and postural deficits. Most of our physiotherapists are also qualified Clinical Pilates Instructors and Acupuncturists
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea1" href="#fiveArea1">
+                        SPARRC KIDS Health Program 
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="fiveArea1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <img class="img-responsive" src="images/department/sparrc-kids/timthumb.jpg"><br><br>  
+       SPARRC Institute is now conducting the Kids Health Program.
+
+After school activity as an awareness program for thrice a week. This Program is also extended to the underprivileged children with care & concern.
+                            </div>
+                        </div>
+                    </div>
+                    
+            	</div>
+                 
+                
+</div>
+
+<div class="col-lg-6">
+
+       
+        		<div class="accordion" id="accordionArea">
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#oneArea">
+                              Corporate Wellness
+                                <span class="font-icon-arrow-simple-down"></span>
+                            </div>
+                        </div>
+                        <div id="oneArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                           <img class="img-responsive" src="images/department/corporate-wellness/timthumb.jpg"><br><br>  
+       Every one of our trainers are certified, have completed Sports and Wellness specialty coursesand shadow a doctor and Master Trainer before seeing any clients. Our in-depth knowledge ofthe human body allows us to safely prescribe exercises that directly relate to an individual’sgoals. In addition to helping the general fitness client, we have trainers that are specialists in areas such as tennis, football, cricket, squash, running, power lifting and post-surgical rehabilitation. Our staff works with a wide variety of clients Inclusive of : Tamil Nadu Police, Indian Army,IT corporates,Manufacturing Industries,Educational Institutes, Banking Institutions etc.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#twoArea">
+                           Acupuncture
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="twoArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <img  class="img-responsive"src="images/department/acupuncture/timthumb%20(1).jpg"><br><br>  
+        Acupuncture is among the oldest healing practices in the world.  As part of traditional Chinese medicine (TCM), acupuncture aims to restore and maintain health through the stimulation of specific points on the body. We sparrc institute use Acupuncture  as a second line of defense in treating varied painful conditions, it helps in fastening the healing process.<br><h5>PRINCIPLE OF ACUPUNCTURE:</h5><br>
+Oriental medicine is a holistic approach, which is based on the treatment of all bodily systems.  Acupuncture benefits the improvement of physical health conditions as well as affective disorders and instills a feeling of increased mental clarity.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#threeArea">
+                         Geriatrics
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="threeArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <img class="img-responsive" src="images/department/genriatric/timthumb.jpg"><br><br>
+          Geriatrics is a sub-specialty of internal medicine that focuses on health care of elderly people. It aims to promote health by preventing and treating diseases and disabilities in older adults, The term geriatrics comes from the Greek  geron meaning “old man” and iatros meaning “healer”.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fourArea">
+                        Sparrc for Specially abled!
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="fourArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <img class="img-responsive" src="images/department/sparrc-for-specially-abled/sparrc-for-disabled.gif"><br><br>
+          FAMES – Fitness Adaptation & Movement Education Services is a division of sparrc engaged to improve quality of physical, mental and social activities of specially abled. The dedicated team of sparrc – fames have the experts in the field of Physiotherapy, Occupational therapy, Speech therapy, Special education, Acupuncture, Aquatherapy, Pulsed electro magnetic field, Art therapy, Play therapy, Neuro rehabilitation, Reiki, EFT, and Pranic healing Here at Sparrc, we prefer to address Autism, ADHD, Down’s syndrome, Cerebral palsy and children with difficulties as differentially abled understanding the uniqueness in their ability.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fiveArea">
+                        Creative Arts & Movement Therapy
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </div>
+                        </div>
+                        <div id="fiveArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                               <img class="img-responsive" src="images/department/creative-arts/timthumb.jpg"><br><br>
+          Creative Arts & Movement Therapy For psychological, Physical & Spiritual wellness !
+                            </div>
+                        </div>
+                    </div>
+                    
+            	</div>
+             
+</div>
+            
+            
+    </div>
+            
+    </div>
+	</div>
+    
+	<!--<div class="full-width-container block-4">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<header>
+						<h2><span>Projects</span></h2>
+					</header>
+				</div>
+			</div>
+			<div class="row">
+				<div id="owl-carousel" class="owl-carousel">
+					<div class="grid_4">
+						<div class="">
+							<div class="img_container"><img src="images/index_img-1.jpg" alt="img"></div>
+							<div class="owl-text">Lorem ipsum</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="">
+							<div class="img_container"><img src="images/index_img-2.jpg" alt="img"></div>
+							<div class="owl-text">Derto minert</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="">
+							<div class="img_container"><img src="images/index_img-3.jpg" alt="img"></div>
+							<div class="owl-text">Sedrotr selimto</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="">
+							<div class="img_container"><img src="images/index_img-2.jpg" alt=""></div>
+							<div class="owl-text">Derto minert</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="">
+							<div class="img_container"><img src="images/index_img-3.jpg" alt=""></div>
+							<div class="owl-text">Sedrotr selimto</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="">
+							<div class="img_container"><img src="images/index_img-1.jpg" alt=""></div>
+							<div class="owl-text">Lorem ipsum</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+<!--	<div class="full-width-container block-5">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<header>
+						<h1 class="text-center">News</h1>
+					</header>
+				</div>
+				<div class="grid_4">
+					<article>
+						<h3><a href="#">November 2014</a></h3>
+						<p>Gamus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. Praesent faucibus malesuada cibuste.</p>
+						<a href="#" class="btn">More</a>
+					</article>
+				</div>
+				<div class="grid_4">
+					<article>
+						<h3><a href="#">March 2015</a></h3>
+						<p>Damus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. Praesent faucibus malesuada cibust.</p>
+						<a href="#" class="btn">More</a>
+					</article>
+				</div>
+				<div class="grid_4">
+					<article>
+						<h3><a href="#">June 2015</a></h3>
+						<p>Jamus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. Praesent faucibus malesuadaonec. </p>
+						<a href="#" class="btn">More</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>-->
+<div id="contact" class="full-width-container block-6">
+    <div class="container">
+  <h1 class="text-center">Contact Us</h1>
+  <form role="form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input class="form-control  input-lg" id="name" type="text" placeholder="Enter your Name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input class="form-control input-lg " id="email" type="email" placeholder="Enter your Email">
+    </div>
+   
+    
+  
+      <div class="form-group">
+  <label for="comment">Message:</label>
+  <textarea placeholder="Enter your Message" class="form-control" rows="7" id="comment" ></textarea>
+</div>
+  <input type="submit" class="btn btn-lg btn-success" value="Send Email">
+  </form>
+</div>
+
+</body>
+</html>
+ 
+    
+    
+    
+    </div>
+    
+    
+</section>
+
+<!--=======footer=================================
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				<h2><span>Follow Us</span></h2>
+				<a href="#" class="btn bd-ra"><span class="fa fa-facebook"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-tumblr"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-google-plus"></span></a>
+				<pre>© <span id="copyright-year"></span>joelcreations |  Privacy Policy</pre>
+			</div>
+		</div>
+	</div>
+	
+</footer>-->
+
+<!--
+<script>
+	jQuery(function(){
+		jQuery('#camera_wrap').camera({
+			height: '34.58333333333333%',
+			thumbnails: false,
+			pagination: true,
+			fx: 'simpleFade',
+			loader: 'none',
+			hover: false,
+			navigation: false,
+			playPause: false,
+			minHeight: "139px",
+		});
+	});
+</script>
+    <script>
+	$(document).ready(function() {
+		$(".owl-carousel").owlCarousel({
+			navigation: true,
+			pagination: false,
+			items : 3,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3],
+			itemsTablet: [750,1],
+			itemsMobile : [479,1],
+			navigationText: false
+		});
+	});
+</script>  -->
+<script>
+$(function () {
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+<!--
+<script>
+	$(document).ready(function() { 
+			if ($('html').hasClass('desktop')) {
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 20,
+					resposive: true,
+					hideDistantElements: true,
+				});
+			}
+		});
+</script>-->
+</body>
+</html>
